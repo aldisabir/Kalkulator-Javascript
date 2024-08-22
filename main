@@ -1,0 +1,4 @@
+const tambah = document.getElementById ('tambah');
+const kurang = document.getElementById ('kurang');
+const kali = document.getElementById ('kali');
+const bagi = document.getElementById ('bagi');

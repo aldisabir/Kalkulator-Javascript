@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-200 flex justify-center items-center">
+
+        <main class="bg-gray-800 border-4 min-h-[400px] min-w-full border-double rounded-2xl md:min-w-[650px] md:max-w-[650px]">
+
+            <h1 class="font-bold text-center underline italic text-white mb-5 mt-3">
+                GO - CALCULATOR
+            </h1>
+            
+            <div class="md:flex justify-center">
+                <p id="hasil" class="font-mono text-6xl text-right px-5 border-4 overflow-hidden border-black rounded-xl bg-green-950 text-yellow-400 mx-3 mb-4 md:max-w-96 md:min-w-96" >
+                    0
+                </p>
+            </div>
+            
+            <div class="md:flex md:justify-center">
+
+                <div class="flex justify-center my-5">
+                    <input id="pertama" placeholder="Input First Number" type="number" class="rounded-xl text-xl text-center font-mono font-bold text-red-600 mx-3 p-1">
+                </div>
+                
+                <div class="flex justify-center my-5">
+                    <input id="kedua" placeholder="Input Second Number" type="number" class="rounded-xl text-xl text-center font-mono font-bold text-red-600 mx-3 p-1">
+                </div>
+            
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 place-items-center md:flex md:justify-center md:mt-4">
+
+                <button id="tambah" class="col-start-1 col-end-2 row-start-1 row-end-2 bg-black text-white text-5xl text-center font-bold h-14 pb-6 w-14 rounded-full">
+                    +
+                </button>
+            
+                <button id="kurang" class="col-start-1 col-end-2 row-start-2 row-end-3 bg-black text-white text-5xl text-center font-bold h-14 pb-3 w-14 rounded-full">
+                    -
+                </button>
+            
+                <button id="kali" class="col-start-2 col-end-3 row-start-1 row-end-2 bg-black text-white text-3xl text-center font-semibold h-14 pb-1 w-14 rounded-full">
+                    X
+                </button>
+            
+                <button id="bagi" class="col-start-2 col-end-3 row-start-2 row-end-3 bg-black text-white text-5xl text-center font-bold h-14 pb-3 w-14 rounded-full">
+                    :
+                </button>
+
+                <button id="hapus" class="col-start-3 col-end-4 row-start-1 row-end-3 bg-orange-500 text-black text-5xl text-center font-semibold md:h-14 h-32 pb-3 w-14 rounded-full">
+                    C
+                </button>
+
+            </div>
+            
+        </main>
+
+    <script src="main.js"> </script>
+</body>
+</html>
